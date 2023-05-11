@@ -23,6 +23,8 @@
             <input type="text" name="p_name" placeholder="enter the product name" class="box" required>
             <input type="number" name="p_price" min="0" placeholder="enter the product price" class="box" required>
             <input type="file" name="p_image" accept="image/png, image/jpg, image/jpeg"class="box" required>
+            <input type="submit" value="add the product" name="add_product" class="btn">
+            
 
         </form>
     </section>
