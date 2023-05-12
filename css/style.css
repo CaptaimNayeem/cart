@@ -102,6 +102,15 @@ html{
  .header .flex .navbar a:hover{
     color:yellow;
  }
+ .header .flex .cart{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color:var(--white);
+ }
+ 
+ .header .flex .cart:hover{
+    color:yellow;
+ }
 
 .add-product-form{
     max-width: 50rem;

@@ -7,7 +7,7 @@
         <a href="productss.php">view productss</a>
     </nav>
 
-    <a href="cart.php">cart<span>0</span></a>
+    <a href="cart.php"class="cart">cart<span>0</span></a>
 
 
 </div>
