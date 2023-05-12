@@ -13,8 +13,10 @@ if(isset($_POST['add_product'])){
    if($insert_query){
     move_uploaded_file($p_image_tmp_name, $p_image_folder);
     $message[] = 'product add succesfully';
-   
-}
+   }
+   else{
+    $message[] = 'could not add the product';
+   } 
 
 }
 
@@ -38,7 +40,7 @@ if(isset($_POST['add_product'])){
 
     </head>
     <body>
-        
+
         <?php 
         if(isset($message)){
             foreach($message as $message){
