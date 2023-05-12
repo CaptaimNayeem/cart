@@ -66,6 +66,39 @@ if(isset($_POST['add_product'])){
 
         </form>
     </section>
+
+    <section class="display-product-table">
+
+   <table>
+
+      <thead>
+         <th>product image</th>
+         <th>product name</th>
+         <th>product price</th>
+         <th>action</th>
+      </thead>
+
+      <tbody>
+         <?php
+         
+            $select_products = mysqli_query($conn, "SELECT * FROM `products`");
+            if(mysqli_num_rows($select_products) > 0){
+               while($row = mysqli_fetch_assoc($select_products)){
+
+               };
+            };
+         ?>
+
+         <?php
+
+         ?>
+      </tbody>
+   </table>
+    </section>
+
+
+
+
     </div>
 
 
