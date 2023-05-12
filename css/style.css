@@ -89,6 +89,21 @@ html{
    gap:1.5rem;
 }
 
+.message span{
+   font-size: 2rem;
+   color:var(--black);
+}
+
+.message i{
+   font-size: 2.5rem;
+   color:var(--black);
+   cursor: pointer;
+}
+
+.message i:hover{
+   color:var(--red);
+}
+
 .header{
     background-color: var(--blue);
     position: sticky;
