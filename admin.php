@@ -10,6 +10,12 @@ if(isset($_POST['add_product'])){
 
    $insert_query = mysqli_query($conn, "INSERT INTO `products`(name, price, image) VALUES('$p_name', '$p_price', '$p_image')") or die('query failed');
 
+   if($insert_query){
+    move_uploaded_file($p_image_tmp_name, $p_image_folder);
+    $message[] = 'product add succesfully';
+   
+}
+
 }
 
 
@@ -32,7 +38,18 @@ if(isset($_POST['add_product'])){
 
     </head>
     <body>
-        <?php include 'header.php'; ?>
+        
+        <?php 
+        if(isset($message)){
+            foreach($message as $message){
+               echo '<div class="message"><span>'.$message.'</span> <i class="fas fa-times" onclick="this.parentElement.style.display = `none`;"></i> </div>';
+            };
+         };
+         
+        ?>
+
+   
+<?php include 'header.php';?>
 
     <div class="container">
 
