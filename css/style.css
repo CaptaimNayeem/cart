@@ -112,6 +112,15 @@ html{
     color:yellow;
  }
 
+ .header .flex .cart span{
+    padding:.1rem .5rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    color:var(--blue);
+    font-size: 2rem;
+ }
+
+ 
 .add-product-form{
     max-width: 50rem;
     background-color: var(--bg-color);
