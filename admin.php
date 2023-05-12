@@ -85,11 +85,21 @@ if(isset($_POST['add_product'])){
             if(mysqli_num_rows($select_products) > 0){
                while($row = mysqli_fetch_assoc($select_products)){
 
-               };
-            };
+               ?>
+               <tr>
+                <td> img src="uploaded_img/<?php echo $row ['image']; ?>" height="100" alt=""?>"</td>
+                <td><?php echo $row['name']; ?></td>
+                <td>$<?php echo $row['price']; ?>/-</td>
+
+               </tr>  
+              
          ?>
 
          <?php
+          };
+        }else{
+            echo "<span>no product added</span>";
+            }
 
          ?>
       </tbody>
