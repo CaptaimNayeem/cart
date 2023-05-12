@@ -181,6 +181,10 @@ html{
        display: inline-block;
        transition: .2s linear;
     }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+     }
     .header .flex .navbar{
         position: absolute;
         top:99%; left:0; right:0;
