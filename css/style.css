@@ -120,7 +120,15 @@ html{
     font-size: 2rem;
  }
 
- 
+ #menu-btn{
+    margin-left: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color:var(--white);
+    display: none;
+ }
+
+
 .add-product-form{
     max-width: 50rem;
     background-color: var(--bg-color);
@@ -149,3 +157,46 @@ html{
     width: 100%;
 }
 
+
+
+
+@media (max-width:991px){
+
+    html{
+       font-size: 55%;
+    }
+ 
+ }
+
+ @media (max-width:450px){
+
+    html{
+       font-size: 50%;
+    }
+ 
+ }
+ @media (max-width:768px){
+
+    #menu-btn{
+       display: inline-block;
+       transition: .2s linear;
+    }
+    .header .flex .navbar{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background-color: var(--blue);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .header .flex .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+     }
+    .header .flex .navbar a{
+        margin:2rem;
+        display: block;
+        text-align: center;
+        font-size: 2.5rem;
+     }
+
+
+
+ }
